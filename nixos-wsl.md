@@ -42,6 +42,7 @@ sudo nixos-rebuild switch --upgrade
 
 sudo nano /etc/nixos/configuration.nix
 
+change the nixos to avinash 
 ```
 # wsl.defaultUser = "nixos"
 wsl.defaultUser = "avinash"
@@ -53,6 +54,13 @@ ctrl X -- to exit
 ```
 sudo nixos-rebuild boot  -- dont use nixos-rebuild switch here
 ```
+[set password - avinash]
+
+```
+sudo passwd avinash
+```
+
+
 
 sudo nano /etc/nixos/configuration.nix
 
