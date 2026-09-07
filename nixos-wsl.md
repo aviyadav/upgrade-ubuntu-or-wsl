@@ -54,11 +54,45 @@ ctrl X -- to exit
 ```
 sudo nixos-rebuild boot  -- dont use nixos-rebuild switch here
 ```
+
+[in windows]
+
+```
+wsl -t NixOS -- terminate NixOS
+
+wsl -d NixOS --user root exit
+
+wsl -t NixOS
+
+wsl -d NixOS
+```
+
+
 [set password - avinash]
 
 ```
 sudo passwd avinash
 ```
+
+#### [Exit and restart the distro]
+
+```
+wsl -t NixOS
+wsl -d NixOS
+```
+
+
+#### [sudo to start asking for a password in the future]
+in configuration.nix
+```
+security.sudo.wheelNeedsPassword = true;
+```
+then run
+
+```
+sudo nixos-rebuild switch
+```
+
 
 
 
